@@ -1,0 +1,29 @@
+<div class="pg-select">
+<div class="content">
+<h1>Cadastrados</h1>
+<table class="table table-striped">
+  <thead>
+     <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td></td>
+        <td></td>
+    </tr>
+  </thead>
+  <tbody>
+     {{#data}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{age}}</td>
+        <td><a href='update/{{id}}'><i class="bi bi-pen"></i></a></td>
+        <td><a href='deletar/{{id}}' class='deletar'><i class="bi bi-trash"></i></a></td>
+    </tr>
+    {{/data}}
+    </tr>
+  </tbody>
+</table>
+<a href="/" class="btn cancelar">Voltar</a>
+</div>
+</div>

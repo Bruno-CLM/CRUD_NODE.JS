@@ -1,0 +1,20 @@
+<div class="pg-form">
+<form class="form-geral" name="form1" action="/controllerUpdate" method="post">
+  <h1 class="form-geral-title">Atualize seu cadastro</h1>
+  <div class="mb-3">
+    <label class="form-label">ID:</label>
+    <input type="text" name="id" placeholder="ID: " class="form-control disabled" value="{{id}}" />
+  </div>
+  <div class="mb-3">
+    <label class="form-label" >Nome:</label>
+    <input type="text" name="name" placeholder="Name: " class="form-control" value="{{name}}" />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Idade:</label>
+    <input  type="text" name="age" placeholder="Age: " class="form-control" value="{{age}}" />
+  </div>
+    <input type="submit" class="btn btn-update" name="btnSubmit" id="btnSubmit" value="Atualizar"/>
+    <a class="btn btn-danger cancelar" href="/select">Cancelar</a>
+</form>
+</div>
+
